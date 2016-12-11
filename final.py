@@ -20,8 +20,6 @@ for j in range (0):
 	fin.close()
 
 
-'''
-
 data=np.array(data)
 ID=np.array(ID)
 
@@ -47,4 +45,3 @@ print('acc = ',score[1])
 
 
 model.save('model')
-'''
