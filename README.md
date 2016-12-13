@@ -1,11 +1,11 @@
 # MLfinal
-# after deleting same data:	
+### after deleting same data:	
 	class0: 734536
 	class1: 230990
 	class2: 43
 	class3: 902
 	class4: 12757
-# up to now, 0.95 kaggle performance with 1 NN layer, and 1 softmax layer. 
+### up to now, 0.95 kaggle performance with 1 NN layer, and 1 softmax layer. 
 
 ### changhc
 ####cyber.py
