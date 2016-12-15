@@ -1,6 +1,7 @@
 # MLfinal
 	In train
-	apach		0
+	normal		875363
+	apach2		0
 	back 		1971
 	mailbomb 	0
 	processtable 	0
