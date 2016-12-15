@@ -1,51 +1,34 @@
 # MLfinal
-	In train
-	normal		875363
+	In train        original-->delete same data
+	normal		875363-->734536
 	----------------------------
-	apach2		0
-	back 		1971
-	mailbomb 	0
-	processtable 	0
-	snmpgetattack 	0
-	teardrop 	881
-	smurf 		2527107
-	land 		19
-	neptune 	964959
-	pod 		244
-	udpstorm 	0
+	back 		1971-->884
+	teardrop 	881-->834
+	smurf 		2527107-->2771
+	land 		19-->17
+	neptune 	964959-->226289
+	pod 		244-->195
 	-----------------------------
 	ps 		11272
 	buffer_overflow 25
 	perl 		1
 	rootkit 	8
 	loadmodule 	9	
-	xterm 		0
-	sqlattack 	0
-	httptunnel 	0
 	----------------------------
 	ftp_write 	8
 	guess_passwd 	47
-	snmpguess 	0
-	imap 		980
+	imap 		980-->12
 	spy 		1
-	warezclient 	914
+	warezclient 	914-->805
 	warezmaster 	18
 	multihop 	7
 	phf 		4
 	imap 		980
-	named 		0
-	sendmail 	0
-	xlock 		0
-	xsnoop 		0
-	worm 		0
 	----------------------------
-	nmap 		2080
-	ipsweep 	11272
-	portsweep 	9328
-	satan 		14309
-	mscan 		0
-	saint 		0
-	worm 		0
+	nmap 		2080-->1369
+	ipsweep 	11272-->3469
+	portsweep 	9328-->3256
+	satan 		14309-->4636
 ### yoshie
 #### after deleting same data:	
 	class0: 734536
