@@ -11,6 +11,7 @@
 	neptune 	964959
 	pod 		244
 	udpstorm 	0
+	-----------------------------
 	ps 		11272
 	buffer_overflow 25
 	perl 		1
@@ -19,6 +20,7 @@
 	xterm 		0
 	sqlattack 	0
 	httptunnel 	0
+	----------------------------
 	ftp_write 	8
 	guess_passwd 	47
 	snmpguess 	0
@@ -34,6 +36,7 @@
 	xlock 		0
 	xsnoop 		0
 	worm 		0
+	----------------------------
 	nmap 		2080
 	ipsweep 	11272
 	portsweep 	9328
