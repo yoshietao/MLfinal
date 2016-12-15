@@ -9,7 +9,6 @@
 	neptune 	964959-->226289
 	pod 		244-->195
 	-----------------------------
-	ps 		11272
 	buffer_overflow 25
 	perl 		1
 	rootkit 	8
@@ -23,7 +22,6 @@
 	warezmaster 	18
 	multihop 	7
 	phf 		4
-	imap 		980
 	----------------------------
 	nmap 		2080-->1369
 	ipsweep 	11272-->3469
