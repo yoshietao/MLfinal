@@ -1,5 +1,5 @@
 # MLfinal
-	In train        original-->delete same data
+	In train	original-->delete same data
 	normal		875363-->734536
 	----------------------------
 	back 		1971-->884
