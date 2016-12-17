@@ -38,10 +38,20 @@
 
 ### changhc
 ####cyber.py
-	ver 1:
-	score = 0.95682 using 2 layers (32, 32) (relu, relu) and 1 softmax output.
+######ver 1:
+	score = 0.95682 using 2 layers (32, 32) (relu, relu) and 1 softmax output.  --> weak baseline passed
+	
+######ver 2:
+	use SMOTE regular to oversample class 2 and 3
+		exp 1: remove duplicate, SMOTE once
+			false batch size but I'm not submitting this again now.
+		exp 2: no removal
+			0.95592, batch size = 1000 and shouldn't be too high
+		exp 3: remove duplicate, SMOTE until all classes have the same amount of data
+			0.95776, improved but still far from strong baseline.
 
 ##TODO
 * Deal with unbalanced training set
 	* https://www.quora.com/In-classification-how-do-you-handle-an-unbalanced-training-set
 	* http://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-machine-learning-dataset/
+* According to this site, class R2L may have more data in the testing set than we imagined, so this can be something that we should tackle.
