@@ -55,3 +55,4 @@
 	* https://www.quora.com/In-classification-how-do-you-handle-an-unbalanced-training-set
 	* http://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-machine-learning-dataset/
 * According to this site, class R2L may have more data in the testing set than we imagined, so this can be something that we should tackle.
+	* http://cseweb.ucsd.edu/~elkan/clresults.html
