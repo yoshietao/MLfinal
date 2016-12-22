@@ -1,4 +1,5 @@
 # MLfinal
+### yoshie
 	In train	original-->delete same data
 	normal		875363-->734536
 	----------------------------
@@ -27,7 +28,6 @@
 	ipsweep 	11272-->3469
 	portsweep 	9328-->3256
 	satan 		14309-->4636
-### yoshie
 #### after deleting same data:	
 	class0: 734536
 	class1: 230990
@@ -35,7 +35,9 @@
 	class3: 902
 	class4: 12757
 #### up to now, 0.95 kaggle performance with 1 NN layer, and 1 softmax layer. 
-
+#### compare test and train set 
+	I found that 419773 out of 606799 records in the test set can be found in train set.
+	Thus We can check if we predict correctly on these records, and can modify the incorrect ones. 
 ### changhc
 ####cyber.py
 ######ver 1:
