@@ -38,6 +38,8 @@
 #### compare test and train set 
 	I found that 419773 out of 606799 records in the test set can be found in train set.
 	Thus We can check if we predict correctly on these records, and can modify the incorrect ones. 
+#### decision tree
+	have 0.96021 accuracy due to simple decision tree.
 ### changhc
 ####cyber.py
 ######ver 1:
