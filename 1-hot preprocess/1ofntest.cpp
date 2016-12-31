@@ -10,32 +10,13 @@ using namespace std;
 
 int main()
 {
-	ifstream ifs("../train");
+	ifstream ifs("../test.in");
+	ofstream ofs("test-1ofn");
 	string str;
 	map<string,bool> m;
 	while(getline(ifs,str))
 	{
-		m[str]=true;
-	}
-
-	cout<<m.size()<<endl;
-
-	vector<string> rawdata(m.size());
-	vector<int> count(5);
-	int counter=0;
-	map<string, bool>::iterator it;
-    for(it = m.begin() ; it != m.end() ; it++)
-	{
-		rawdata[counter]=it->first;
-		counter++;
-	}
-	
-
-	ofstream ofs("1ofn");
-	
-	for(int i=0;i<rawdata.size();i++)
-	{
-		istringstream ss(rawdata[i]);
+		istringstream ss(str);
 		string token;
 
 		int num=0;
@@ -124,9 +105,10 @@ int main()
 				if(strcmp(token.c_str(),"vmnet")==0) token=string("68");
 				if(strcmp(token.c_str(),"whois")==0) token=string("69");
 				
+				
 				for(int j=0;j<70;j++)
 				{
-					if(stoi(token)==j)
+					if(j==stoi(token))
 					{
 						newstr=newstr+"1,";
 					}else
@@ -154,7 +136,7 @@ int main()
 
 				for(int j=0;j<11;j++)
 				{
-					if(stoi(token)==j)
+					if(j==stoi(token))
 					{
 						newstr=newstr+"1,";
 					}else
@@ -165,44 +147,10 @@ int main()
 				}
 				num++;
 			}
-
-
-			else if(num==41)
+			else if(num==40)
 			{
-				if(strcmp(token.c_str(),"back.")==0) token=string("1");
-				if(strcmp(token.c_str(),"buffer_overflow.")==0) token=string("2");
-				if(strcmp(token.c_str(),"ftp_write.")==0) token=string("3");
-				if(strcmp(token.c_str(),"guess_passwd.")==0) token=string("3");
-				if(strcmp(token.c_str(),"imap.")==0) token=string("3");
-				if(strcmp(token.c_str(),"ipsweep.")==0) token=string("4");
-				if(strcmp(token.c_str(),"land.")==0) token=string("1");
-				if(strcmp(token.c_str(),"loadmodule.")==0) token=string("2");
-				if(strcmp(token.c_str(),"multihop.")==0) token=string("3");
-				if(strcmp(token.c_str(),"neptune.")==0) token=string("1");
-				if(strcmp(token.c_str(),"nmap.")==0) token=string("4");
-				if(strcmp(token.c_str(),"normal.")==0) token=string("0");
-				if(strcmp(token.c_str(),"perl.")==0) token=string("2");
-				if(strcmp(token.c_str(),"phf.")==0) token=string("3");
-				if(strcmp(token.c_str(),"pod.")==0) token=string("1");
-				if(strcmp(token.c_str(),"portsweep.")==0) token=string("4");
-				if(strcmp(token.c_str(),"rootkit.")==0) token=string("2");
-				if(strcmp(token.c_str(),"satan.")==0) token=string("4");
-				if(strcmp(token.c_str(),"smurf.")==0) token=string("1");
-				if(strcmp(token.c_str(),"spy.")==0) token=string("3");
-				if(strcmp(token.c_str(),"teardrop.")==0) token=string("1");
-				if(strcmp(token.c_str(),"warezclient.")==0) token=string("3");
-				if(strcmp(token.c_str(),"warezmaster.")==0) token=string("3");
-
-				ofs<<newstr.substr(0,newstr.size()-1)<<endl;
-				ofs<<stoi(token)<<endl;
-				for(int i=0;i<5;i++)
-				{
-					string ii;
-					stringstream ss;
-					ss << i;
-					ss >> ii;
-					if (ii == token) count[i]++;
-				}
+				ofs<<newstr.substr(0,newstr.size());
+				ofs<<token<<endl;
 			}
 			else
 			{
@@ -211,16 +159,5 @@ int main()
 			}
 		}
  	}
- 	for(int i=0;i<5;i++) cout<<count[i]<<endl;
-/*
-	int count=0;
-	map<string, int>::iterator it;
-	for(it = mm.begin() ; it != mm.end() ; it++)
-		if(it->second==41)
-		{
-			cout<<"if(strcmp(token.c_str(),\""<<it->first<<"\""<<")==0) token=string(\""<<count<<"\");"<<endl;
-			count++;
-		}
-*/
 }
 
