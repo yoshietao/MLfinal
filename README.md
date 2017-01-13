@@ -62,3 +62,23 @@
 	* http://cseweb.ucsd.edu/~elkan/clresults.html
 * SMOTE toolkit
 	* http://contrib.scikit-learn.org/imbalanced-learn/generated/imblearn.over_sampling.SMOTE.html
+
+##Exp.
+	models:
+	NN
+	decision tree or random forest
+	gradboost (takes very long time. Need to start earlier)
+** use random seed 0 **
+* assessment metric: F score, accuracy
+* oversampling with SMOTE regular, borderline(??), ADASYN
+* oversample to 10%, 35%, 60%, 85%
+* downsampling with easy ensemble
+* downsample to 90%, 65%, 40%, 15%
+* hybrid (SMOTE + Tomek)
+* ratio 90%, 65%, 40%, 15%
+* remove class 2 and 3 from training data
+* decompose into small classes
+* one class repeating
+* normalization
+* one-hot encoding or not
+* (NN only) different loss function
