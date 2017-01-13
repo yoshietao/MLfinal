@@ -68,7 +68,7 @@
 	NN
 	decision tree or random forest
 	gradboost (takes very long time. Need to start earlier)
-** use random seed 0 **
+**use random seed 0**
 * assessment metric: F score, accuracy
 * oversampling with SMOTE regular, borderline(??), ADASYN
 * oversample to 10%, 35%, 60%, 85%
