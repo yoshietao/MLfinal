@@ -1,0 +1,8 @@
+steps:
+
+1. use stack_train_data.cpp to delete duplicated train data
+2. use undersampling.cpp to divide train to divide_train & divide_valid
+3. use 1ofntest.cpp to do 1-hot encoding to test set
+4. use NN_stack.py, RF_stack.py, GTB_stack_py, DT_stack.py, RF_trick.py..... to train on divide_train and predict divide_valid and test set
+5. use trans.py to transfer each prediction inoto 1-hot encoding
+6. use stacking.py to get final prediction 
